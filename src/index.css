@@ -278,6 +278,16 @@ section {
     @apply flex justify-center items-center w-52 h-60 relative;
   }
 
+  .logo-wrapper {
+    @apply flex justify-center items-center;
+    width: 150px;
+    height: 48px;
+  }
+
+  .logo-wrapper img {
+    @apply max-w-full max-h-full object-contain;
+  }
+
   form {
     label {
       @apply block text-white-50 mb-2;

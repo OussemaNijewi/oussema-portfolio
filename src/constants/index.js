@@ -151,41 +151,54 @@ const techStackIcons = [
 const expCards = [
   {
     review:
-      "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+      "Oussema brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    title: "Virtual Reality Software Developer",
+    date: "May 2025 - October 2025",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Developed a Virtual Reality lab simulation on Oculus Quest 2 in Unreal Engine 5 using Blueprints to run immersive proprioception reflex experiments for the Faculty of Health Sciences.",
+      "Implemented an arm tracking system to log rotation angles with less than 2° margin of error, providing students with precise data.",
+      "Implemented a results-submission feature using Amazon SES that emails logged simulation data to students via HTTP requests making it easier to work on the written lab portion.",
     ],
   },
   {
     review:
-      "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+      "Oussema's contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Full Stack Software Developer Intern",
+    date: "May 2024 - August 2024",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Implemented UI components for the Setup Wizard App on Ford’s Android-Auto based infotainment system.",
+      "Collaborated with UX designers and system engineers to match UI behavior with design specifications and infotainment system requirements.",
+      "Tested UI flows on in-vehicle infotainment builds, validating responsiveness and input correctness under target hardware constraints.",
     ],
   },
   {
     review:
-      "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+      "Oussema's work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Full Stack Software Developer Intern",
+    date: "May 2023 - December 2023",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Worked on the MyMustang app, exclusive to the 2024 Mustang, built with Unreal Engine and packaged to QNX platform to deliver modern interactive UIs of Track Apps Service.",
+      "Resolved a critical input bug by modifying button press logic to release finger capture when a user’s finger slides outside the button bounds, preventing unintended click events.",
+      "Debugged and fixed float precision errors in displayed lap times eliminating rounding inconsistencies of ±1 ms",
+    ],
+  },
+  {
+    review:
+      "Oussema's work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    imgPath: "/images/exp3.png",
+    logoPath: "/images/logo3.png",
+    title: "Frontend Software Developer Intern",
+    date: "September 2022 - April 2023",
+    responsibilities: [
+      "Debugged and fixed localization issues, updated translations, and reformatted strings to ensure readability across all infotainment system UIs.",
+      "Worked in an Agile/Scrum environment, gaining hands-on experience with professional software development workflows and cross-functional team dynamics.",
+      "Learned core development practices including build processes, debugging workflows, and version control in a large-scale software project.",
     ],
   },
 ];
