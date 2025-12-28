@@ -279,8 +279,8 @@ section {
   }
 
   .logo-wrapper {
-    @apply flex justify-center items-center;
-    width: 150px;
+    @apply flex items-center justify-start;
+    width: 140px;
     height: 48px;
   }
 
