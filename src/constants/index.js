@@ -154,6 +154,7 @@ const expCards = [
       "Oussema brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
+    Tools: "Unreal Engine - Oculus Quest 2 - C++",
     title: "Virtual Reality Software Developer",
     date: "May 2025 - October 2025",
     responsibilities: [
@@ -167,6 +168,7 @@ const expCards = [
       "Oussema's contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
+    Tools: "Vehicle Infotainment (Android Auto - Java/Kotlin)",
     title: "Full Stack Software Developer Intern",
     date: "May 2024 - August 2024",
     responsibilities: [
@@ -180,6 +182,7 @@ const expCards = [
       "Oussema's work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
+    Tools: "Vehicle Infotainment (Unreal Engine - C++)",
     title: "Full Stack Software Developer Intern",
     date: "May 2023 - December 2023",
     responsibilities: [
@@ -193,6 +196,7 @@ const expCards = [
       "Oussema's work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo3.png",
+    Tools: "Vehicle Infotainment (QT/QML - C++)",
     title: "Frontend Software Developer Intern",
     date: "September 2022 - April 2023",
     responsibilities: [
