@@ -56,11 +56,11 @@ const Hero = () => {
               <h1>that Deliver Results</h1>
             </div>
             <p>
-              Hi ! I'm Oussema Nijewi , a software developer based in Ottawa
-              Ontario with a passion for coding .
+              Hi ! I'm Oussema Nijewi , a software developer based in Ottawa,
+              Ontario Canada.
             </p>
             <Button
-              className="md:w-80 md:h-16 w-60 h-12"
+              className="md:w-60 md:h-16 w-60 h-12"
               id="button"
               text="See my Work"
             />
