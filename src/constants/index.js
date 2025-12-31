@@ -195,7 +195,7 @@ const expCards = [
     review:
       "Oussema's work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
     imgPath: "/images/exp2.png",
-    logoPath: "/images/logo3.png",
+    logoPath: "/images/logo2.png",
     Tools: "Vehicle Infotainment (QT/QML - C++)",
     title: "Frontend Software Developer Intern",
     date: "September 2022 - April 2023",

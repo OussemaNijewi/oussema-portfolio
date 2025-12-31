@@ -85,7 +85,7 @@ section {
   }
 
   .hero-text {
-    @apply flex flex-col justify-center md:text-[45px] text-[25px] font-semibold relative z-10 pointer-events-none;
+    @apply flex flex-col justify-center md:text-[45px] text-[30px] font-semibold relative z-10 pointer-events-none;
     img {
       @apply size-8 md:size-10 object-contain;
     }
@@ -379,9 +379,9 @@ section {
   background: linear-gradient(
     0deg,
     rgba(69, 222, 196, 0) 0%,
-    #733635 25%,
+    #166de0 25%,
     #d4af37 37.51%,
-    #002f6c 62.83%,
+    #166de0 62.83%,
     #9a2a2a 92.91%
   );
 }
