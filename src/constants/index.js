@@ -281,20 +281,16 @@ const testimonials = [
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
+    name: "https://github.com/OussemaNijewi",
+    imgPath: "/images/github.png",
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
-  {
-    name: "linkedin",
+    name: "https://www.linkedin.com/in/nijewi-oussema",
     imgPath: "/images/linkedin.png",
+  },
+  {
+    name: "https://www.instagram.com/oussema.nijewi/",
+    imgPath: "/images/instagram.png",
   },
 ];
 
