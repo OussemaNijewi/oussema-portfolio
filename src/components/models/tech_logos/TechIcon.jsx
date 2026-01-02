@@ -5,17 +5,6 @@ import * as THREE from "three";
 
 const TechIcon = ({ model }) => {
   const scene = useGLTF(model.modelPath);
-  useEffect(() => {
-    if (model.name === "Three.js") {
-      scene.scene.traverse((child) => {
-        if (child.isMesh) {
-          if (child.name === "Object_5") {
-            child.material = new THREE.MeshStandardMaterial({ color: "white" });
-          }
-        }
-      });
-    }
-  }, [scene]);
   return (
     <Canvas>
       <ambientLight intensity={0.1} />
