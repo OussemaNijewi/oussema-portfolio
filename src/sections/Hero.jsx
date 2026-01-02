@@ -33,7 +33,7 @@ const Hero = () => {
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1>
-                Shaping
+                Passionate
                 <span className="slide">
                   <span className="wrapper">
                     {words.map((word) => (
@@ -52,15 +52,15 @@ const Hero = () => {
                   </span>
                 </span>
               </h1>
-              <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
+              <h1>Software Engineer that</h1>
+              <h1>Delivers Results</h1>
             </div>
-            <p>
-              Hi ! I'm Oussema Nijewi , a software developer based in Ottawa,
-              Ontario Canada.
+            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none w-170">
+              Hi, I’m Oussema Nijewi, a software engineer with experience in VR,
+              automotive infotainment systems, and full-stack web development
             </p>
             <Button
-              className="md:w-60 md:h-16 w-60 h-12"
+              className="md:w-40 md:h-16 w-60 h-12"
               id="button"
               text="See my Work"
             />
@@ -69,7 +69,7 @@ const Hero = () => {
 
         {/*RIGHT: 3D MODEL*/}
         <figure>
-          <div className="hero-3d-layout">
+          <div className="hero-3d-layout hover:cursor-grab">
             <HeroExperience />
           </div>
         </figure>

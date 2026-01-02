@@ -18,8 +18,8 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-center md:text-end">
-            © {new Date().getFullYear()} Oussema Nijewi, University Of Ottawa
-            Bachelor of Applied Sciences in Software Engineering
+            Bachelor of Applied Sciences in Software Engineering University Of
+            Ottawa April 2026
           </p>
         </div>
       </div>

@@ -52,17 +52,18 @@ const ShowcaseSection = () => {
           {/* LEFT SIDE */}
           <div className="first-project-wrapper" ref={project1Ref}>
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="GymInsights" />
+              <a href="https://github.com/orgs/uOttawaGymManagementSys/repositories">
+                <img src="/images/project1.png" alt="GymInsights" />
+              </a>
             </div>
             <div className="text-content">
               <h2>
-                Providing Real-Time Gym Traffic and Equipment Status Updates for
-                University of Ottawa Students
+                GymInsights: a Real-Time Traffic and Equipment Status Tracker
+                for University of Ottawa Students
               </h2>
               <p>
                 GymInsights is a Full-Stack platform featuring a React Native
-                mobile app, an Electron desktop app for gym staff, and a REST
-                API server.
+                mobile app, an Electron desktop app, and a REST API server.
               </p>
             </div>
           </div>
@@ -70,11 +71,13 @@ const ShowcaseSection = () => {
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={project2Ref}>
               <div className="image-wrapper bg-[#ffefdb]">
-                <img src="/images/project2.png" alt="KineQuest" />
+                <a href="https://github.com/OussemaNijewi/KineQuest">
+                  <img src="/images/project2.png" alt="KineQuest" />
+                </a>
               </div>
               <h2>
-                A VR Proprioception Lab Simulation for the University of Ottawa
-                Human Kinetics Students
+                KineQuest: A VR Proprioception Lab Simulation for the University
+                of Ottawa Human Kinetics Students
               </h2>
             </div>
 

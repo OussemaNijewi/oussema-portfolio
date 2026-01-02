@@ -18,18 +18,18 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "VR", imgPath: "/images/ideas.svg" },
+  { text: "Interactive UIs", imgPath: "/images/concepts.svg" },
+  { text: "Embedded Systems", imgPath: "/images/designs.svg" },
+  { text: "Game Development", imgPath: "/images/code.svg" },
+  { text: "VR", imgPath: "/images/ideas.svg" },
+  { text: "Interactive UIs", imgPath: "/images/concepts.svg" },
+  { text: "Embedded Systems", imgPath: "/images/designs.svg" },
+  { text: "Game Development", imgPath: "/images/code.svg" },
 ];
 
 const counterItems = [
-  { value: 2, suffix: "+", label: "Years of Experience" },
+  { value: 2, suffix: "+", label: "Years of Experience (CO-OP)" },
   { value: 2, suffix: "+", label: "Satisfied Clients" },
   { value: 3, suffix: "+", label: "Completed Projects" },
   { value: 90, suffix: "%", label: "Client Retention Rate" },
@@ -77,18 +77,18 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Debugging & Problem Solving",
+    desc: "Comfortable diagnosing and fixing issues in large codebases running on target hardware.",
   },
   {
-    imgPath: "/images/chat.png",
+    imgPath: "/images/agile.png",
     title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    desc: "Familiar with Agile workflows, version control, and collaborative development in large teams.",
   },
   {
     imgPath: "/images/time.png",
     title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    desc: "I make sure projects are completed on schedule, with quality & attention to detail.",
   },
 ];
 
