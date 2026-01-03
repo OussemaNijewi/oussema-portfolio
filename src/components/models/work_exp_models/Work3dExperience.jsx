@@ -23,7 +23,7 @@ const Work3dExperience = ({
   const ModelComponent = MODEL_MAP[model];
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className="w-full h-[500px]">
       <Canvas shadows camera={{ position: [0, 3, 7], fov: 45 }}>
         <ambientLight intensity={0.5} color="#fff4e6" />
 
