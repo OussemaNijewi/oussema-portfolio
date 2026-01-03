@@ -11,7 +11,9 @@ Title: 2019 Ford GT MKII Track
 import { useGLTF } from "@react-three/drei";
 
 export function FordGt(props) {
-  const { nodes, materials } = useGLTF("/models/ford_gt-transformed.glb");
+  const { nodes, materials } = useGLTF(
+    `${import.meta.env.BASE_URL}models/ford_gt-transformed.glb`
+  );
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -144,4 +146,4 @@ export function FordGt(props) {
   );
 }
 
-useGLTF.preload("/models/ford_gt-transformed.glb");
+useGLTF.preload(`${import.meta.env.BASE_URL}models/ford_gt-transformed.glb`);

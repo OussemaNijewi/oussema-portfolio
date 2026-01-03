@@ -12,7 +12,7 @@ import { useGLTF } from "@react-three/drei";
 
 export function VrHeadset(props) {
   const { nodes, materials } = useGLTF(
-    "/models/oculus_quest_2-transformed.glb"
+    `${import.meta.env.BASE_URL}models/oculus_quest_2-transformed.glb`
   );
   return (
     <group {...props} dispose={null}>
@@ -36,4 +36,6 @@ export function VrHeadset(props) {
   );
 }
 
-useGLTF.preload("/models/oculus_quest_2-transformed.glb");
+useGLTF.preload(
+  `${import.meta.env.BASE_URL}models/oculus_quest_2-transformed.glb`
+);

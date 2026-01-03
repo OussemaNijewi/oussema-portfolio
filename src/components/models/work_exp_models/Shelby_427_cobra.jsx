@@ -12,7 +12,7 @@ import { useGLTF } from "@react-three/drei";
 
 export function Shelby(props) {
   const { nodes, materials } = useGLTF(
-    "/models/shelby_427_cobra-transformed.glb"
+    `${import.meta.env.BASE_URL}models/shelby_427_cobra-transformed.glb`
   );
   return (
     <group {...props} dispose={null}>
@@ -261,4 +261,6 @@ export function Shelby(props) {
   );
 }
 
-useGLTF.preload("/models/shelby_427_cobra-transformed.glb");
+useGLTF.preload(
+  `${import.meta.env.BASE_URL}models/shelby_427_cobra-transformed.glb`
+);

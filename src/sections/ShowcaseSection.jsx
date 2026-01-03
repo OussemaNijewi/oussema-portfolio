@@ -53,7 +53,10 @@ const ShowcaseSection = () => {
           <div className="first-project-wrapper" ref={project1Ref}>
             <div className="image-wrapper">
               <a href="https://github.com/orgs/uOttawaGymManagementSys/repositories">
-                <img src="/images/project1.png" alt="GymInsights" />
+                <img
+                  src={`${import.meta.env.BASE_URL}images/project1.png`}
+                  alt="GymInsights"
+                />
               </a>
             </div>
             <div className="text-content">
@@ -72,7 +75,10 @@ const ShowcaseSection = () => {
             <div className="project" ref={project2Ref}>
               <div className="image-wrapper bg-[#ffefdb]">
                 <a href="https://github.com/OussemaNijewi/KineQuest">
-                  <img src="/images/project2.png" alt="KineQuest" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/project2.png`}
+                    alt="KineQuest"
+                  />
                 </a>
               </div>
               <h2>
@@ -83,7 +89,10 @@ const ShowcaseSection = () => {
 
             <div className="project" ref={project3Ref}>
               <div className="image-wrapper bg-[#ffe7eb]">
-                <img src="/images/project3.png" alt="TO BE DECIDED" />
+                <img
+                  src={`${import.meta.env.BASE_URL}images/project3.png`}
+                  alt="TO BE DECIDED"
+                />
               </div>
               <h2>A WORK IN PROGRESS ...</h2>
             </div>

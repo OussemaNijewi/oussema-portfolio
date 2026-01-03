@@ -12,7 +12,7 @@ import { useGLTF } from "@react-three/drei";
 
 export function Mustang(props) {
   const { nodes, materials } = useGLTF(
-    "/models/ford_mustang_gtd-transformed.glb"
+    `${import.meta.env.BASE_URL}models/ford_mustang_gtd-transformed.glb`
   );
   return (
     <group {...props} dispose={null}>
@@ -11028,4 +11028,6 @@ export function Mustang(props) {
   );
 }
 
-useGLTF.preload("/models/ford_mustang_gtd-transformed.glb");
+useGLTF.preload(
+  `${import.meta.env.BASE_URL}models/ford_mustang_gtd-transformed.glb`
+);
