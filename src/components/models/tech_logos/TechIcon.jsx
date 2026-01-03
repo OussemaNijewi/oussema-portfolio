@@ -7,7 +7,7 @@ const TechIcon = ({ model }) => {
   const scene = useGLTF(model.modelPath);
   return (
     <Canvas>
-      <ambientLight intensity={0.2} />
+      <ambientLight intensity={0.3} />
       <directionalLight position={[5, 5, 5]} intensity={1} />
 
       <Environment preset="city" />

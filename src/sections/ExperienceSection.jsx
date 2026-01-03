@@ -5,6 +5,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { expCards } from "../constants";
 import TitleHeader from "../components/TitleHeader";
 import GlowCard from "../components/GlowCard";
+import VrHeadsetExperience from "../components/models/work_exp_models/Work3dExperience";
+import Work3dExperience from "../components/models/work_exp_models/Work3dExperience";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -101,11 +103,13 @@ const Experience = () => {
             {expCards.map((card) => (
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
-                  <GlowCard card={card}>
-                    <div className="logo-wrapper">
-                      <img src={card.imgPath} alt="exp-img" />
-                    </div>
-                  </GlowCard>
+                  <div className="w-full h-full hover:cursor-grab">
+                    <Work3dExperience
+                      model={card.model}
+                      scale={card.scale}
+                      rotation={card.rotation}
+                    />
+                  </div>
                 </div>
                 <div className="xl:w-4/6">
                   <div className="flex items-start">

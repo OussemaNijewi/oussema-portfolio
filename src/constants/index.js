@@ -118,32 +118,20 @@ const techStackImgs = [
 const techStackIcons = [
   {
     name: "",
-    modelPath: "/models/unreal_engine_cglogo.glb",
+    modelPath: "/models/unreal_engine_cglogo-transformed.glb",
     scale: 0.02,
     rotation: [0, 0, 0],
   },
   {
     name: "Cpp",
-    modelPath: "/models/cpp_logo.glb",
+    modelPath: "/models/cpp_logo-transformed.glb",
     scale: 0.065,
     rotation: [0, 0, 0],
   },
   {
-    name: "Python",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.7,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Android",
-    modelPath: "/models/android_logo.glb",
-    scale: 2.5,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Java",
-    modelPath: "/models/java_logo.glb",
-    scale: 1.2,
+    name: "React",
+    modelPath: "/models/react_logo-transformed.glb",
+    scale: 1,
     rotation: [0, 0, 0],
   },
   {
@@ -158,16 +146,36 @@ const techStackIcons = [
     scale: 0.045,
     rotation: [0, -Math.PI / 4, 0],
   },
+  {
+    name: "Python",
+    modelPath: "/models/python-transformed.glb",
+    scale: 0.7,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Android",
+    modelPath: "/models/android_logo-transformed.glb",
+    scale: 2.5,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Java",
+    modelPath: "/models/java_logo-transformed.glb",
+    scale: 1.2,
+    rotation: [0, 0, 0],
+  },
 ];
 
 const expCards = [
   {
     review:
       "Oussema brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     Tools: "Unreal Engine - Oculus Quest 2 - C++",
     title: "Virtual Reality Software Developer",
+    model: "vr",
+    scale: 4.5,
+    rotation: [-0.3, 0.3, 0],
     date: "May 2025 - October 2025",
     responsibilities: [
       "Developed a Virtual Reality lab simulation on Oculus Quest 2 in Unreal Engine 5 using Blueprints to run immersive proprioception reflex experiments for the Faculty of Health Sciences.",
@@ -178,10 +186,12 @@ const expCards = [
   {
     review:
       "Oussema's contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     Tools: "Vehicle Infotainment (Android Auto - Java/Kotlin)",
     title: "Full Stack Software Developer Intern",
+    model: "shelby",
+    scale: 120,
+    rotation: [-0.2, 0.8, 0],
     date: "May 2024 - August 2024",
     responsibilities: [
       "Implemented UI components for the Setup Wizard App on Ford’s Android-Auto based infotainment system.",
@@ -192,10 +202,12 @@ const expCards = [
   {
     review:
       "Oussema's work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
     Tools: "Vehicle Infotainment (Unreal Engine - C++)",
     title: "Full Stack Software Developer Intern",
+    model: "mustang_gtd",
+    scale: 100,
+    rotation: [-0.2, 0.8, 0],
     date: "May 2023 - December 2023",
     responsibilities: [
       "Worked on the MyMustang app, exclusive to the 2024 Mustang, built with Unreal Engine and packaged to QNX platform to deliver modern interactive UIs of Track Apps Service.",
@@ -206,10 +218,12 @@ const expCards = [
   {
     review:
       "Oussema's work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     Tools: "Vehicle Infotainment (QT/QML - C++)",
     title: "Frontend Software Developer Intern",
+    model: "ford_gt",
+    scale: 100,
+    rotation: [-0.2, 0.8, 0],
     date: "September 2022 - April 2023",
     responsibilities: [
       "Debugged and fixed localization issues, updated translations, and reformatted strings to ensure readability across all infotainment system UIs.",
