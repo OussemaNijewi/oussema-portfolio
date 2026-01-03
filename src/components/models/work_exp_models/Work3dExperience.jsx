@@ -3,16 +3,11 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense, lazy, memo } from "react";
 import { useInView } from "react-intersection-observer";
 
-const VrHeadset = lazy(() =>
-  import(`${import.meta.env.BASE_URL}/Oculus_quest_2`)
-);
-const Shelby = lazy(() =>
-  import(`${import.meta.env.BASE_URL}/Shelby_427_cobra`)
-);
-const Mustang = lazy(() =>
-  import(`${import.meta.env.BASE_URL}/Ford_mustang_gtd`)
-);
-const FordGt = lazy(() => import(`${import.meta.env.BASE_URL}/Ford_gt`));
+/* 🔹 Lazy-load models (CRITICAL) */
+const VrHeadset = lazy(() => import("./Oculus_quest_2"));
+const Shelby = lazy(() => import("./Shelby_427_cobra"));
+const Mustang = lazy(() => import("./Ford_mustang_gtd"));
+const FordGt = lazy(() => import("./Ford_gt"));
 
 const MODEL_MAP = {
   vr: VrHeadset,
