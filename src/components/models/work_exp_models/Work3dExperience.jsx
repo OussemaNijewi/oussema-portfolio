@@ -6,6 +6,7 @@ import { Mustang } from "./Ford_mustang_gtd";
 import { FordGt } from "./Ford_gt";
 
 import { useInView } from "react-intersection-observer";
+import { Suspense } from "react";
 
 const Work3dExperience = ({
   model,
@@ -23,40 +24,44 @@ const Work3dExperience = ({
   const ModelComponent = MODEL_MAP[model];
 
   return (
-    <div ref={ref} className="w-full h-[500px]">
-      <Canvas shadows camera={{ position: [0, 3, 7], fov: 45 }}>
-        <ambientLight intensity={0.5} color="#fff4e6" />
+    <div ref={ref} className="w-full">
+      {inView && (
+        <Suspense fallback={<div>Loading...</div>}>
+          <Canvas shadows camera={{ position: [0, 3, 7], fov: 45 }}>
+            <ambientLight intensity={0.5} color="#fff4e6" />
 
-        <directionalLight
-          position={[5, 5, 3]}
-          intensity={2.5}
-          color="#ffd9b3"
-        />
+            <directionalLight
+              position={[5, 5, 3]}
+              intensity={2.5}
+              color="#ffd9b3"
+            />
 
-        <directionalLight
-          position={[5, 9, 1]}
-          castShadow
-          intensity={0.5}
-          color="#ffd9b3"
-        />
-        <Environment preset="city" />
-        <OrbitControls
-          enableZoom={false}
-          minPolarAngle={Math.PI / 5}
-          maxPolarAngle={Math.PI / 2}
-        />
+            <directionalLight
+              position={[5, 9, 1]}
+              castShadow
+              intensity={0.5}
+              color="#ffd9b3"
+            />
+            <Environment preset="city" />
+            <OrbitControls
+              enableZoom={false}
+              minPolarAngle={Math.PI / 5}
+              maxPolarAngle={Math.PI / 2}
+            />
 
-        {ModelComponent && (
-          <group
-            scale={scale}
-            position={[0, 0, 0]}
-            rotation={rotation}
-            castShadow
-          >
-            <ModelComponent />
-          </group>
-        )}
-      </Canvas>
+            {ModelComponent && (
+              <group
+                scale={scale}
+                position={[0, 0, 0]}
+                rotation={rotation}
+                castShadow
+              >
+                <ModelComponent />
+              </group>
+            )}
+          </Canvas>
+        </Suspense>
+      )}
     </div>
   );
 };
