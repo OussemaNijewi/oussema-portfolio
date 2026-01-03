@@ -270,46 +270,11 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Juan Raymond",
+    mentions: "@juan-raymond",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "Oussema is one of the best coop that I've mentored, and If I have to use 1 word it's improvement. During our time together, he showed me his schedule and on top of his study and coop time, he also go to the gym and practice leet code. His day is packed of good activities which is something that I learn from him. Oussema show skills working with Unreal Engine, C++, Blueprint, UMG, Git and Jira in his daily work. Oussema also shows the willingness to learn by asking question to his senior and implement the knowledge that he gained by trying to work on a side project in his free time. In this era where a highly skilled younger generation with good work ethic getting harder and harder to find I think picking up Oussema is like finding a gem.",
     imgPath: `${import.meta.env.BASE_URL}images/client1.png`,
-  },
-  {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
-    review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: `${import.meta.env.BASE_URL}images/client3.png`,
-  },
-  {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
-    review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: `${import.meta.env.BASE_URL}images/client2.png`,
-  },
-  {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
-    review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: `${import.meta.env.BASE_URL}images/client5.png`,
-  },
-  {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
-    review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: `${import.meta.env.BASE_URL}images/client4.png`,
-  },
-  {
-    name: "Albert Flores",
-    mentions: "@albertflores",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: `${import.meta.env.BASE_URL}images/client6.png`,
   },
 ];
 
