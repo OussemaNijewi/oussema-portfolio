@@ -4,8 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { expCards } from "../constants";
 import TitleHeader from "../components/TitleHeader";
-import GlowCard from "../components/GlowCard";
-import VrHeadsetExperience from "../components/models/work_exp_models/Work3dExperience";
 import Work3dExperience from "../components/models/work_exp_models/Work3dExperience";
 
 gsap.registerPlugin(ScrollTrigger);
