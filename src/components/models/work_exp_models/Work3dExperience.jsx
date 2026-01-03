@@ -24,7 +24,7 @@ const Work3dExperience = ({
   const ModelComponent = MODEL_MAP[model];
 
   return (
-    <div ref={ref} className="w-full h-[900px]">
+    <div ref={ref} className="w-full h-[700px]">
       {inView && (
         <Suspense fallback={<div>Loading...</div>}>
           <Canvas shadows camera={{ position: [0, 3, 7], fov: 45 }}>
