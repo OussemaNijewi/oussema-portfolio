@@ -2,8 +2,6 @@ import AnimatedCounter from "../components/AnimatedCounter";
 import Button from "../components/Button";
 import HeroExperience from "../components/heroModels/HeroExperience";
 import { words } from "../constants";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 
 const Hero = () => {
   return (
@@ -39,7 +37,7 @@ const Hero = () => {
                   </span>
                 </span>
               </h1>
-              <h1>Software Engineer that</h1>
+              <h1>Software Engineer That</h1>
               <h1>Delivers Results</h1>
             </div>
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none w-170">
