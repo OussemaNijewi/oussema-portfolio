@@ -5,5 +5,5 @@ import tailwindcss from "@tailwindcss/vite"; // We have added this line
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/oussema-portfolio",
+  base: "/oussema-portfolio/",
 });
