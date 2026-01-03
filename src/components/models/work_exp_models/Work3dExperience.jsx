@@ -1,69 +1,65 @@
-import { Environment, OrbitControls } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { VrHeadset } from "./Oculus_quest_2";
-import { Shelby } from "./Shelby_427_cobra";
-import { Mustang } from "./Ford_mustang_gtd";
-import { FordGt } from "./Ford_gt";
-
+import { Suspense, lazy, memo } from "react";
 import { useInView } from "react-intersection-observer";
-import { Suspense } from "react";
 
-const Work3dExperience = ({
-  model,
-  scale = [1, 1, 1],
-  rotation = [0, 0, 0],
-}) => {
-  const { ref, inView } = useInView({ triggerOnce: true });
-  const MODEL_MAP = {
-    vr: VrHeadset,
-    shelby: Shelby,
-    mustang_gtd: Mustang,
-    ford_gt: FordGt,
-  };
+const VrHeadset = lazy(() =>
+  import(`${import.meta.env.BASE_URL}/Oculus_quest_2`)
+);
+const Shelby = lazy(() =>
+  import(`${import.meta.env.BASE_URL}/Shelby_427_cobra`)
+);
+const Mustang = lazy(() =>
+  import(`${import.meta.env.BASE_URL}/Ford_mustang_gtd`)
+);
+const FordGt = lazy(() => import(`${import.meta.env.BASE_URL}/Ford_gt`));
 
-  const ModelComponent = MODEL_MAP[model];
+const MODEL_MAP = {
+  vr: VrHeadset,
+  shelby: Shelby,
+  mustang_gtd: Mustang,
+  ford_gt: FordGt,
+};
 
-  return (
-    <div ref={ref} className="w-full h-[400px]">
-      {inView && (
-        <Suspense fallback={<div>Loading...</div>}>
-          <Canvas shadows camera={{ position: [0, 3, 7], fov: 45 }}>
-            <ambientLight intensity={0.5} color="#fff4e6" />
+const Work3dExperience = memo(
+  ({ model, scale = [1, 1, 1], rotation = [0, 0, 0] }) => {
+    const { ref, inView } = useInView({
+      triggerOnce: true,
+      rootMargin: "200px", // start loading BEFORE visible
+    });
 
-            <directionalLight
-              position={[5, 5, 3]}
-              intensity={2.5}
-              color="#ffd9b3"
-            />
+    const ModelComponent = MODEL_MAP[model];
 
-            <directionalLight
-              position={[5, 9, 1]}
-              castShadow
-              intensity={0.5}
-              color="#ffd9b3"
-            />
-            <Environment preset="city" />
-            <OrbitControls
-              enableZoom={false}
-              minPolarAngle={Math.PI / 5}
-              maxPolarAngle={Math.PI / 2}
-            />
+    return (
+      <div ref={ref} className="w-full h-[400px]">
+        {inView && ModelComponent && (
+          <Canvas
+            camera={{ position: [0, 3, 7], fov: 45 }}
+            dpr={[1, 1.5]} // 🔹 cap pixel ratio
+            frameloop="demand" // 🔹 render only on interaction
+            gl={{ antialias: true, powerPreference: "high-performance" }}
+          >
+            <Suspense fallback={null}>
+              {/* 🔹 Cheap lighting (no HDR, no env map) */}
+              <ambientLight intensity={0.6} />
+              <directionalLight position={[5, 5, 3]} intensity={1.8} />
 
-            {ModelComponent && (
-              <group
-                scale={scale}
-                position={[0, 0, 0]}
-                rotation={rotation}
-                castShadow
-              >
+              <OrbitControls
+                enableZoom={false}
+                enablePan={false}
+                minPolarAngle={Math.PI / 5}
+                maxPolarAngle={Math.PI / 2}
+              />
+
+              <group scale={scale} rotation={rotation}>
                 <ModelComponent />
               </group>
-            )}
+            </Suspense>
           </Canvas>
-        </Suspense>
-      )}
-    </div>
-  );
-};
+        )}
+      </div>
+    );
+  }
+);
 
 export default Work3dExperience;
