@@ -272,6 +272,7 @@ const testimonials = [
   {
     name: "Juan Raymond",
     mentions: "@juan-raymond",
+    linkedin: "https://www.linkedin.com/in/juan-raymond/",
     review:
       "Oussema is one of the best coop that I've mentored, and If I have to use 1 word it's improvement. During our time together, he showed me his schedule and on top of his study and coop time, he also go to the gym and practice leet code. His day is packed of good activities which is something that I learn from him. Oussema show skills working with Unreal Engine, C++, Blueprint, UMG, Git and Jira in his daily work. Oussema also shows the willingness to learn by asking question to his senior and implement the knowledge that he gained by trying to work on a side project in his free time. In this era where a highly skilled younger generation with good work ethic getting harder and harder to find I think picking up Oussema is like finding a gem.",
     imgPath: `${import.meta.env.BASE_URL}images/client1.png`,
