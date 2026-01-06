@@ -42,7 +42,6 @@ const Work3dExperience = ({
               intensity={0.5}
               color="#ffd9b3"
             />
-            <Environment preset="city" />
             <OrbitControls
               enableZoom={false}
               minPolarAngle={Math.PI / 5}
