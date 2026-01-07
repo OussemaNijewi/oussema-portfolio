@@ -192,7 +192,7 @@ const expCards = [
       "Oussema brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
     logoPath: `${import.meta.env.BASE_URL}images/logo1.png`,
     Tools: "Unreal Engine - Oculus Quest 2 - C++",
-    title: "Virtual Reality Software Developer",
+    title: "Software Developer",
     model: "vr",
     scale: 4.5,
     rotation: [-0.3, 0.3, 0],
